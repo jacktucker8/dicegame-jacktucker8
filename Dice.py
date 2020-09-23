@@ -8,7 +8,9 @@ class Dice:
     # it takes as input the number sides and if none is specified use 6
     # it sets the dice object's number of sides (instance variable)
     # it sets the list that tracks the rolls to the empty list (instance variable)
-
+    def __init__(self, roll_list, num_sides=6):
+        self.num_sides = num_sides
+        self.roll_list = []
 
     # create the __str__ method
     # it returns "Last roll: value" where value is the last value in the list that tracks the rolls
