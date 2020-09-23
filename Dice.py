@@ -23,6 +23,9 @@ class Dice:
     # it randomly picks a value from 1 to the number of sides this dice object has
     # it adds that value to the end of the list that tracks all the rolls
     # it returns the value
+    def roll(self):
+        roll_list.append(randrange(1, self.sides+1))
+        return self.roll_list[-1]
 
 
     # BONUS
